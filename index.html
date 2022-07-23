@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="main-container">
@@ -37,25 +38,25 @@
           <div class="row2">
             <div>
               <label for="email">EMAIL</label>
-              <input type="email" required>
+              <input type="email" id="email" required>
             </div>
             <div>
               <label for="phonenumber">
                 PHONE NUMBER
               </label>
-              <input type="text" inputmode="numeric" pattern="[0-9]*">
+              <input type="text" id="phonenumber" inputmode="numeric" pattern="[0-9]*">
             </div>
           </div>
           <div class="row3">
             <div>
               <label for="password">PASSWORD</label>
-              <input type="text">
+              <input type="text" id="password">
             </div>
             <div>
               <label for="confirmpassword">
                 CONFIRM PASSWORD
               </label>
-              <input type="text"></div>
+              <input type="text" id="confirmpassword"></div>
           </div>
         </form>
       </div>
