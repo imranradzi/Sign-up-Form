@@ -1,6 +1,6 @@
 body {
   display: flex;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(47, 47, 47);
   justify-content: center;
   align-items: stretch;
   box-sizing: border-box;
@@ -11,12 +11,16 @@ body {
   display: flex;
   background-color: rgb(104, 104, 104);
   height: 90vh;
-  width: 90vw;
-  border-radius: 1%;
+  width: 70vw;
+  border-radius: 10px 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgb(13, 13, 13);
 }
 
 .image {
-  background-color: aquamarine;
+  background-image: url(nicepic.jpg);
+  background-size: cover;
+  background-color: rgb(141, 141, 141);
   flex-basis: 40%;
 }
 
@@ -26,16 +30,32 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: min(5vh, 5vw);
 }
 
 .row1,
 .row2,
 .row3 {
   display: flex;
+  justify-content: start;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 form > div > div {
   display: flex;
   flex-direction: column;
 }
+
+form > div > div + div {
+  padding-left: 3vh;
+}
+
+.register > * {
+  padding: 2vh min(5vh, 5vw);
+}
+
+.formsection {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 5px rgb(201, 201, 201);
+}
+
