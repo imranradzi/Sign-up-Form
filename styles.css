@@ -1,10 +1,22 @@
+@font-face {
+  font-family: quicksand;
+  src: url(Quicksand/Quicksand-VariableFont_wght.ttf)
+}
+
 body {
+  font-family: quicksand, sans-serif;
+  font-size: 0.8rem;
   display: flex;
   background-color: rgb(47, 47, 47);
   justify-content: center;
   align-items: stretch;
   box-sizing: border-box;
   padding-top: 4vh;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.3;
 }
 
 .main-container {
@@ -47,7 +59,7 @@ form > div > div {
 }
 
 form > div > div + div {
-  padding-left: 3vh;
+  padding-left: 3vw;
 }
 
 .register > * {
@@ -59,3 +71,38 @@ form > div > div + div {
   box-shadow: 0px 5px 5px rgb(201, 201, 201);
 }
 
+span {
+  font-style: italic;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.582);
+}
+
+a:hover {
+  color: rgb(0, 170, 255);
+}
+
+button {
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-width: 0px;
+  background-color:rgba(0, 162, 255, 0.512);
+  color: white;
+  font-size: 0.8rem;
+  padding: 5px 25px;
+  margin: 10px auto;
+  font-family: quicksand, sans-serif;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: rgba(93, 190, 243, 0.923);
+}
