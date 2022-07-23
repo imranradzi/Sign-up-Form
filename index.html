@@ -10,16 +10,56 @@
 <body>
   <div class="main-container">
     <div class="image">image should be here</div>
-    <div class="login">
-      <form action="" method="">
+    <div class="register">
+      <p>
+        This is not a real online service! You know you 
+        need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+      </p>
+      <p>
+        You know you want to.
+      <p>
+      <div>
+        <form action="" method="">
+          <div class="row1">
+            <div>
+              <label for="firstname">FIRST NAME</label>
+              <input type="text" id="firstname" placeholder="epicusername">
+            </div>
+            <div>
+              <label for="lastname">LAST NAME</label>
+              <input type="text" id="lastname"></div>
+          </div>
+          <div class="row2">
+            <div>
+              <label for="email">EMAIL</label>
+              <input type="email">
+            </div>
+            <div>
+              <label for="phonenumber">
+                PHONE NUMBER
+              </label>
+              <input type="text" inputmode="numeric" pattern="[0-9]*">
+            </div>
+          </div>
+          <div class="row3">
+            <div>
+              <label for="password">PASSWORD</label>
+              <input type="text">
+            </div>
+            <div>
+              <label for="confirmpassword">
+                CONFIRM PASSWORD
+              </label>
+              <input type="text"></div>
+          </div>
+        </form>
+      </div>
+      <div>
         <div>
-          <label for="username">Username</label>
-          <input type="text" id="username" placeholder="epicusername">
+          <button>Create Account</button>
         </div>
-        <div>
-          <label for="password">Password</label>
-          <input type="text" id="password"></div>
-      </form>
+        <div>Already have an account? Log in</div>
+      </div>
     </div>
   </div>
 </body>

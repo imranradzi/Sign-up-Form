@@ -17,14 +17,25 @@ body {
 
 .image {
   background-color: aquamarine;
-  flex-basis: 30%;
+  flex-basis: 40%;
 }
 
-.login {
+.register {
   background-color: aliceblue;
-  flex-basis: 70%;
+  flex-basis: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding-left: min(5vh, 5vw);
+}
+
+.row1,
+.row2,
+.row3 {
+  display: flex;
+}
+
+form > div > div {
+  display: flex;
+  flex-direction: column;
 }
