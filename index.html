@@ -13,7 +13,7 @@
     <div class="image">
     </div>
     <div class="register">
-      <div>
+      <div class="firstblock">
         <p>
           <b>
             This is not a real online service! You know you
@@ -29,38 +29,43 @@
           <div class="row1">
             <div>
               <label for="firstname">FIRST NAME</label>
-              <input type="text" id="firstname" placeholder="bugcap">
+              <input type="text" id="firstname" placeholder="John"
+              required>
             </div>
             <div>
               <label for="lastname">LAST NAME</label>
-              <input type="text" id="lastname"></div>
+              <input type="text" id="lastname" placeholder="Doe"></div>
           </div>
           <div class="row2">
             <div>
               <label for="email">EMAIL</label>
-              <input type="email" id="email" required>
+              <input type="email" id="email"
+              placeholder="johndoe@email.com" required>
             </div>
             <div>
               <label for="phonenumber">
                 PHONE NUMBER
               </label>
-              <input type="text" id="phonenumber" inputmode="numeric" pattern="[0-9]*">
+              <input type="text" id="phonenumber" inputmode="numeric" pattern="[0-9]*" placeholder="0123456789"
+              maxlength="10" title="Please enter a 10 digit number" required>
             </div>
           </div>
           <div class="row3">
             <div>
               <label for="password">PASSWORD</label>
-              <input type="text" id="password">
+              <input type="password" id="password">
             </div>
             <div>
               <label for="confirmpassword">
                 CONFIRM PASSWORD
               </label>
-              <input type="text" id="confirmpassword"></div>
+              <input type="password" id="confirmpassword">
+            </div>
           </div>
+          <div class="row4"></div>
         </form>
       </div>
-      <div>
+      <div class="thirdblock">
         <div>
           <button type="submit" form="registerform">
             Create Account

@@ -11,7 +11,6 @@ body {
   justify-content: center;
   align-items: stretch;
   box-sizing: border-box;
-  padding-top: 4vh;
 }
 
 p {
@@ -22,9 +21,9 @@ p {
 .main-container {
   display: flex;
   background-color: rgb(104, 104, 104);
-  height: 90vh;
-  width: 70vw;
-  border-radius: 10px 20px;
+  height: 97vh;
+  width: 90vw;
+  border-radius: 3px;
   overflow: hidden;
   box-shadow: 5px 5px 5px rgb(13, 13, 13);
 }
@@ -37,7 +36,7 @@ p {
 }
 
 .register {
-  background-color: aliceblue;
+  background-color: rgb(90, 90, 90);
   flex-basis: 60%;
   display: flex;
   flex-direction: column;
@@ -49,7 +48,7 @@ p {
 .row3 {
   display: flex;
   justify-content: start;
-  margin-top: 2vh;
+  margin-top: 4vh;
   margin-bottom: 2vh;
 }
 
@@ -67,12 +66,13 @@ form > div > div + div {
 }
 
 .formsection {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.801);
   box-shadow: 0px 5px 5px rgb(201, 201, 201);
 }
 
 span {
   font-style: italic;
+  color:rgba(0, 162, 255, 0.767);
 }
 
 a:link,
@@ -83,11 +83,11 @@ a:visited {
 }
 
 a {
-  color: rgba(0, 0, 0, 0.582);
+  color: rgb(0, 170, 255);
 }
 
 a:hover {
-  color: rgb(0, 170, 255);
+  color: rgba(0, 221, 255, 0.582);
 }
 
 button {
@@ -108,9 +108,32 @@ button:hover {
 }
 
 .error {
-  border-color: pink;
+  border-color: rgb(255, 13, 13);
+  color: rgb(255, 13, 13);
+  border-radius: 2px;
 }
 
 .correct {
-  border-color: greenyellow;
+  border-color: rgb(42, 145, 24);
+  color: rgb(42, 145, 24);
+  border-radius: 2px;
+}
+
+input:focus {
+  background-color: rgb(230, 235, 238);
+}
+
+input:hover {
+  border-color: rgba(0, 162, 255, 0.512);
+  border-width: 2px;
+  border-radius: 2px;
+}
+
+.firstblock,
+.thirdblock {
+  color: rgb(201, 201, 201);
+}
+
+form > div + div + div + div {
+  min-height: 16px;
 }
