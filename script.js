@@ -7,14 +7,15 @@ function checkError() {
   console.log(password);
   pass1 = password.value;
   pass2 = confirmPassword.value;
-  if (pass1 === pass2) {
-    console.log('right');
+  if (pass1 === '' || pass2 === '') {
+    password.setAttribute('class', 'error');
+    confirmPassword.setAttribute('class', 'error');
+  } else if (pass1 === pass2) {
     password.setAttribute('class', 'correct');
     confirmPassword.setAttribute('class', 'correct');
     messageRow.setAttribute('class', 'correct')
     messageRow.textContent = 'Passwords Match!'
   } else {
-    console.log('wrong')
     password.setAttribute('class', 'error');
     confirmPassword.setAttribute('class', 'error');
     messageRow.setAttribute('class', 'error')
